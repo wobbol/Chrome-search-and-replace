@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+
+	"name": "Sex and Gender Filter",
+	"description": "Removes or replaces all male words with female equivlents.",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"match_about_blank":true,
+			"all_frames":true,
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	],
+	"icons": {
+		"19": "icon.png",
+		"128": "icon.png"
+	}
+}
